@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = "ChidoCash"
+include ':app'
+include ':common'

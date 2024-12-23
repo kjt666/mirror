@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvFont" format="reference"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AutoCompleteEmailTextView">
+        <!--        下拉框中,条目的布局-->
+        <!--        其中,条目布局中,TextView的id必须为email,否则报错-->
+        <!--        Item布局抽出来是为了更好的适配不同情况-->
+        <attr name="acetv_adapter_ietm" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SplitEditText">
+        <attr name="setStrokeWidth" format="dimension"/>
+        <attr name="setBorderColor" format="color"/>
+        <attr name="setInputBorderColor" format="color"/>
+        <attr name="setFocusBorderColor" format="color"/>
+        <attr name="setBoxBackgroundColor" format="color"/>
+        <attr name="setBorderCornerRadius" format="dimension"/>
+        <attr name="setBorderSpacing" format="dimension"/>
+        <attr name="setMaxLength" format="integer"/>
+        <attr name="setBorderStyle" format="enum">
+            <enum name="box" value="0"/>
+            <enum name="line" value="1"/>
+        </attr>
+        <attr name="setTextStyle" format="enum">
+            <enum name="plain_text" value="0"/>
+            <enum name="cipher_text" value="1"/>
+        </attr>
+        <attr name="setCipherMask" format="string"/>
+        <attr name="setFakeBoldText" format="boolean"/>
+
+    </declare-styleable>
+</resources>
